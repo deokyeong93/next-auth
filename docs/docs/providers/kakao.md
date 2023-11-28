@@ -11,6 +11,14 @@ https://developers.kakao.com/product/kakaoLogin
 
 https://developers.kakao.com/docs/latest/en/kakaologin/common
 
+The "Authorized redirect URIs" used when creating the credentials must include your full domain and end in the callback path. For example;
+
+
+![스크린샷 2023-11-28 오후 9 27 41](https://github.com/nextauthjs/next-auth/assets/66895208/7d4c2df6-45a6-4937-bb10-4b47c987bff4)
+
+- **For production**: `https://{YOUR_DOMAIN}/api/auth/callback/kakao`
+- **For development**: `http://localhost:3000/api/auth/callback/kakao`
+
 ## Options
 
 The **Kakao Provider** comes with a set of default options:
